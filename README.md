@@ -2,6 +2,8 @@
 
 ## Licence 
 
+[CC-BY-NC-SA 4.0 Licence](http://creativecommons.org/licenses/by-nc-sa/4.0/) 
+
 ![cc](http://mirrors.creativecommons.org/presskit/icons/cc.svg) 
 ![by](http://mirrors.creativecommons.org/presskit/icons/by.svg)
 ![nc](http://mirrors.creativecommons.org/presskit/icons/nc.svg) 
