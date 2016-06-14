@@ -120,7 +120,7 @@ namespace data_access
         public void SlackErrorReport(string message)
         {
             SlackClient client = new SlackClient();
-            client.PostMessage(username: "Mr. Cicharpe", text: $"ERROR: {message}", channel: "#dev");
+            client.PostMessage($"ERROR: {message}");
         }
 
     }

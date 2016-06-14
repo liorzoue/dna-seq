@@ -14,14 +14,16 @@ namespace slack_client
     //Note: This class uses the Newtonsoft Json.NET serializer available via NuGet
     public class SlackClient
     {
-        private readonly Uri _uri;
+        private Uri _uri;
         private readonly Encoding _encoding = new UTF8Encoding();
         private static readonly ILog log = LogManager.GetLogger(typeof(SlackClient));
+        private string _channel;
+        private string _userName;
 
         [Obsolete("Non recommandé")]
         public SlackClient(string urlWithAccessToken)
         {
-            _uri = new Uri(urlWithAccessToken);
+            this.Initialize(urlWithAccessToken);
         }
 
         public SlackClient()
@@ -30,12 +32,27 @@ namespace slack_client
             var slackUrl = ConfigurationManager.AppSettings["Slack_Url"];
             var slackApiKey = ConfigurationManager.AppSettings["Slack_ApiKey"];
 
-            _uri = new Uri(slackUrl + slackApiKey);
+            this.Initialize(slackUrl + slackApiKey);
+        }
+
+        private void Initialize(string slackUrl)
+        {
+            _uri = new Uri(slackUrl);
+
+            _channel = ConfigurationManager.AppSettings["Slack_Channel"];
+            if (string.IsNullOrEmpty(_channel)) _channel = "#dev";
+
+            _userName = ConfigurationManager.AppSettings["Slack_UserName"];
+            if (string.IsNullOrEmpty(_channel)) _channel = "Mr. Cicharpe";
+
         }
 
         //Post a message using simple strings
         public void PostMessage(string text, string username = null, string channel = null)
         {
+            if (string.IsNullOrEmpty(channel)) channel = _channel;
+            if (string.IsNullOrEmpty(username)) username = _userName;
+
             Payload payload = new Payload()
             {
                 Channel = channel,

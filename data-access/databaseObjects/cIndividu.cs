@@ -292,9 +292,7 @@ namespace data_access
 
             SlackClient client = new SlackClient();
 
-            client.PostMessage(username: "Mr. Cicharpe",
-                       text: message,
-                       channel: "#dev");
+            client.PostMessage(message);
         }
     }
 }
