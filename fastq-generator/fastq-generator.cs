@@ -63,11 +63,12 @@ namespace fastq_generator
 
                             var retour = cSequenceRead.ContigeSequence(read.ToList());
                             var fRead = read.FirstOrDefault();
-                            fRead.GestionAmorces(item.RNAME);
-
-                            output.Add(idChar + read.Key + "|" + fRead.Amorce.NAME);
-                            output.Add(retour);
-                            output.Add(string.Empty);
+                            if (fRead != null) {
+                                fRead.GestionAmorces(item.RNAME);
+                                output.Add(idChar + read.Key + "|" + fRead.Amorce.NAME);
+                                output.Add(retour);
+                                output.Add(string.Empty);
+                            }
 
                         }
                         catch (ApplicationException ex)
