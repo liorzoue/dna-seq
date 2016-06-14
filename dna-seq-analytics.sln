@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data-access", "data-access\data-access.csproj", "{995F7113-914A-48F7-AC60-A40782DA6341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "file-reader", "file-reader\file-reader.csproj", "{C98F55F2-3CCC-4F04-ADB7-EC28C23E5F2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console-dna", "console-dna\console-dna.csproj", "{28D33FF7-2164-4875-87EF-07FD77D9B5AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fastq-generator", "fastq-generator\fastq-generator.csproj", "{DDC281F4-210F-4FE2-BCE3-8588D2634063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "slack-client", "slack-client\slack-client.csproj", "{D3D96601-4645-4987-83EE-F16D8EB08494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{4E4A1E4D-4251-41DA-A313-1A26872B900E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{995F7113-914A-48F7-AC60-A40782DA6341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995F7113-914A-48F7-AC60-A40782DA6341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995F7113-914A-48F7-AC60-A40782DA6341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995F7113-914A-48F7-AC60-A40782DA6341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98F55F2-3CCC-4F04-ADB7-EC28C23E5F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98F55F2-3CCC-4F04-ADB7-EC28C23E5F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98F55F2-3CCC-4F04-ADB7-EC28C23E5F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98F55F2-3CCC-4F04-ADB7-EC28C23E5F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D33FF7-2164-4875-87EF-07FD77D9B5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D33FF7-2164-4875-87EF-07FD77D9B5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D33FF7-2164-4875-87EF-07FD77D9B5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D33FF7-2164-4875-87EF-07FD77D9B5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC281F4-210F-4FE2-BCE3-8588D2634063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC281F4-210F-4FE2-BCE3-8588D2634063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC281F4-210F-4FE2-BCE3-8588D2634063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC281F4-210F-4FE2-BCE3-8588D2634063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D96601-4645-4987-83EE-F16D8EB08494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D96601-4645-4987-83EE-F16D8EB08494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D96601-4645-4987-83EE-F16D8EB08494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D96601-4645-4987-83EE-F16D8EB08494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4A1E4D-4251-41DA-A313-1A26872B900E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4A1E4D-4251-41DA-A313-1A26872B900E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4A1E4D-4251-41DA-A313-1A26872B900E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4A1E4D-4251-41DA-A313-1A26872B900E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
